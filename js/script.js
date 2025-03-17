@@ -5,8 +5,14 @@
 // This file contains the JS functions for index.html
 
 /**
- * Displays an alert with the message "Hello, World!"
+ * Do basic math.
  */
-function myButtonClicked() {
-  alert("Hello, World!")
+function enterClicked() {
+  // input
+  const streetNumber = parseInt(document.getElementById("number-entered").value)
+  const streetName = document.getElementById("street-name").value
+
+  // output
+  document.getElementById("user-info").innerHTML =
+    "Your address is: " + streetNumber + " " + streetName + "."
 }
